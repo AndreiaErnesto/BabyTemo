@@ -9,5 +9,8 @@ module.exports = {
       host: process.env.POST || 'localhost',
       storage:'./babytemp.sqlite'
     }
+  },
+  authentication: {
+    jwtSecret: process.env.JWT_SECRET || 'secret'
   }
 }
